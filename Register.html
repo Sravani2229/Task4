@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            .form-box {
+                width: 450px;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px gray;
+            }
+
+            table td {
+                padding: 8px;
+            }
+
+            input, select {
+                padding: 6px;
+                width: 200px;
+                border: 1px solid #999;
+                border-radius: 5px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                width: auto;
+            }
+
+            /* Submit button */
+            input[type="submit"] {
+                width: 120px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 8px;
+                border-radius: 5px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <center><h1>Registration Form</h1></center>
+
+        <center>
+        <div class="form-box">
+        <form action="">
+        <table>
+
+        <tr><td>First Name :</td><td><input type="text" placeholder="First Name" required></td></tr>
+        <tr><td>Last Name :</td><td><input type="text" placeholder="Last Name" required></td></tr>
+        <tr><td>Email :</td><td><input type="email" placeholder="Email" required></td></tr>
+
+        <tr><td>Phone No :</td><td>
+        <input type="tel" placeholder="Phone Number" required
+               pattern="[+]{1}[9]{1}[1]{1}-[6-9]{1}[0-9]{9}"
+               title="Enter valid phone number EX:+91-9090123123">
+        </td></tr>
+
+        <tr><td>Gender :</td>
+            <td>
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="male"> Male
+            </td>
+        </tr>
+
+        <tr><td>Languages :</td>
+            <td>
+                <input type="checkbox" value="Telugu"> Telugu
+                <input type="checkbox" value="English"> English
+                <input type="checkbox" value="Hindi"> Hindi
+            </td>
+        </tr>
+
+        <tr><td>Address :</td>
+            <td>
+                <select>
+                    <option>--CITY--</option>
+                    <option>Hyderabad</option>
+                    <option>Vizag</option>
+                    <option>Vizianagaram</option>
+                </select>
+                <br><br>
+                <select>
+                    <option>--STATE--</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Telangana</option>
+                    <option>Karnataka</option>
+                </select>
+                <br><br>
+                <select>
+                    <option>--COUNTRY--</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr><td>Password :</td>
+            <td><input type="Password" placeholder="Password" required
+                       pattern="[A-Z]{1}[a-z]*[_,@]{1}[0-9]*" 
+                       title="Enter correct format Ex:Abc@123"></td>
+        </tr>
+
+        <tr><td>Confirm Password :</td>
+            <td><input type="Password" placeholder="Confirm Password" required
+                       pattern="[A-Z]{1}[a-z]*[_,@]{1}[0-9]*"
+                       title="Enter correct format Ex:Abc@123"></td>
+        </tr>
+
+        <tr><td></td><td><input type="submit" value="Register"></td></tr>
+
+        </table>
+        </form>
+        </div>
+        </center>
+
+    </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+
+    <style>
+        body {
+            background-color: #2f60ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 320px;
+            background: white;
+            padding: 20px;
+            margin: 40px auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .forgot {
+            text-align: right;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .forgot a {
+            color: #2f60ff;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: #0066ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .signup-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .signup-text a {
+            color: #2f60ff;
+            text-decoration: none;
+        }
+
+        .line {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .facebook-btn, .google-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+        }
+
+        .facebook-btn {
+            background: #3b5998;
+            color: white;
+        }
+
+        .google-btn {
+            background: white;
+            color: #444;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <div class="forgot">
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="login-btn">Login</button>
+
+    <div class="signup-text">
+        Don't have an account? <a href="#">Signup</a>
+    </div>
+
+    <div class="line">Or</div>
+
+    <!-- Redirect to Facebook login -->
+    <a class="facebook-btn" href="https://www.facebook.com/login" target="_blank">
+        Login with Facebook
+    </a>
+
+    <!-- Redirect to Google login -->
+    <a class="google-btn" href="https://account.google.com" target="_blank">
+        Login with Google
+    </a>
+
+</div>
+
+</body>
+</html>
+ -->
